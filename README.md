@@ -31,3 +31,7 @@ we design a dataset-aware hybrid loss that integrates cross entropy and focal lo
 on four benchmark HSI datasets—WHU-Hi-HC, WHU-Hi-LK,
 Indian Pines, and Pavia University—demonstrate that HyperEAST achieves state-of-the-art classification accuracy, robustness,
 and efficiency.
+
+![HyperEAST](https://github.com/user-attachments/assets/a62cee86-0f3c-40e9-9408-ab7edc387eb1)
+
+![LFAM](https://github.com/user-attachments/assets/dcd38ee5-116f-4d07-9842-86d6c292e1c3)
