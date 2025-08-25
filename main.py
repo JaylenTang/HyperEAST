@@ -8,8 +8,8 @@ from torchvision.transforms import ToPILImage
 
 # Configuration (all parameters in one place)
 class Config:
-    DATASET_PATH = "/home/yubai03/yubai03/aJialin_Tang/Research/HyperEAST/catm+hloss/data/IndianPine.mat"
-    GT_PATH = "/home/yubai03/yubai03/aJialin_Tang/Research/HyperEAST/catm+hloss/data/IndianPine.mat"
+    DATASET_PATH = "/home/yubai03/yubai03/aJialin_Tang/Research/HyperEAST/lfam+hloss/data/IndianPine.mat"
+    GT_PATH = "/home/yubai03/yubai03/aJialin_Tang/Research/HyperEAST/lfam+hloss/data/IndianPine.mat"
     MODEL_PATH = "./model_checkpoint.pth"
     OUTPUT_DIR = "./output/"
     INPUT_SIZE = 11

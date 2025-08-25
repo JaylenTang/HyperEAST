@@ -123,13 +123,13 @@ class Attention(nn.Module):
         return x
 
 class Transformer(nn.Module):
-    def __init__(self, dim, depth, n_heads, mlp_ratio, qkv_bias, attn_p, proj_p, use_catm=True):
+    def __init__(self, dim, depth, n_heads, mlp_ratio, qkv_bias, attn_p, proj_p, use_lfam=True):
         super().__init__()
-        print(f"Transformer initialized with use_catm={use_catm}")
+        print(f"Transformer initialized with use_lfam={use_lfam}")
         self.layers = nn.ModuleList([])
         self.norm = nn.LayerNorm(dim)
         for _ in range(depth):
-            attn_layer = AdditiveTokenMixer(dim, attn_bias=qkv_bias, proj_drop=attn_p) if use_catm else Attention(dim, n_heads=n_heads, qkv_bias=qkv_bias, attn_p=attn_p, proj_p=proj_p)
+            attn_layer = AdditiveTokenMixer(dim, attn_bias=qkv_bias, proj_drop=attn_p) if use_lfam else Attention(dim, n_heads=n_heads, qkv_bias=qkv_bias, attn_p=attn_p, proj_p=proj_p)
             self.layers.append(nn.ModuleList([
                 PreNorm(dim, attn_layer),
                 PreNorm(dim, FeedForward(dim, int(dim * mlp_ratio), dropout=proj_p))
@@ -169,7 +169,7 @@ class PatchEmbed3D(nn.Module):
 
         return x
 
-class FactoFormer(nn.Module):
+class Hypereast(nn.Module):
     def __init__(self, img_size, spatial_patch, spectral_patch, n_classes, spatial_embed_dim, spectral_embed_dim, bands, depth, n_heads,
                  qkv_bias, attn_p, proj_p):
 
@@ -187,9 +187,9 @@ class FactoFormer(nn.Module):
         self.spatial_cls_token = nn.Parameter(torch.zeros(1, 1, spatial_embed_dim))
         self.spectral_cls_token = nn.Parameter(torch.zeros(1, 1, spectral_embed_dim))
 
-        # Specify that only the spatial transformer uses CATM
-        self.spatial_transformer = Transformer(spatial_embed_dim, depth, n_heads, 8, qkv_bias, attn_p, proj_p, use_catm=True)
-        self.spectral_transformer = Transformer(spectral_embed_dim, depth, n_heads, 4, qkv_bias, attn_p, proj_p, use_catm=False)
+        # Specify that only the spatial transformer uses lfam
+        self.spatial_transformer = Transformer(spatial_embed_dim, depth, n_heads, 8, qkv_bias, attn_p, proj_p, use_lfam=True)
+        self.spectral_transformer = Transformer(spectral_embed_dim, depth, n_heads, 4, qkv_bias, attn_p, proj_p, use_lfam=False)
 
         dim = spectral_embed_dim + spatial_embed_dim
         self.lin = nn.Linear(dim, dim)

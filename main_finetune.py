@@ -10,7 +10,7 @@ from scipy.io import loadmat
 
 from utils.train_utils import train_epoch, valid_epoch, output_metric
 from utils.data_loader import chooose_train_and_test_point, mirror_hsi, train_and_test_data, train_and_test_label
-from vit_models import FactoFormer
+from vit_models import Hypereast
 from utils.misc import load_state_dict, load_pretrained
 
 # 添加GPU内存监控功能
@@ -129,7 +129,7 @@ Label_test = Data.TensorDataset(x_test,y_test)
 label_train_loader = Data.DataLoader(Label_train, batch_size=args.batch_size, shuffle=True)
 label_test_loader = Data.DataLoader(Label_test, batch_size=args.batch_size, shuffle=True)
 
-model = FactoFormer(
+model = Hypereast(
     img_size=[bands, args.input_size, args.input_size],
     spatial_patch=[bands, 1, 1],
     spectral_patch=[1, args.input_size, args.input_size],
