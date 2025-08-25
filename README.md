@@ -3,9 +3,24 @@
 
 PyTorch codes for "HyperEAST: An Enhanced Attention-Based Spectral-Spatial Transformer with Self-Supervised Pretraining for Hyperspectral Image Classification", 
 
-Submitted to IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2025.
+IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2025.
 
 Authors: 	Jialin Tang, Nan Ma, Chen Jia, Rui Tian, Yanhui Guo
+
+# Citation
+
+```bibtex
+@ARTICLE{106060196,
+  author={Tian, Rui and Liu, Danqing and Bai, Yu and Jin, Yu and Wan, Guanliang and Guo, Yanhui},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  title={Swin-MSP: A Shifted Windows Masked Spectral Pretraining Model for Hyperspectral Image},
+  year={2024},
+  volume={62},
+  number={},
+  pages={1-14},
+  keywords={Hyperspectral imaging;Task analysis;Feature extraction;Image classification;Computer},
+  doi={10.1109/TGRS.2024.3431517}
+}
 
 # Overall
 
@@ -35,3 +50,5 @@ and efficiency.
 ![HyperEAST](https://github.com/user-attachments/assets/a62cee86-0f3c-40e9-9408-ab7edc387eb1)
 
 ![LFAM](https://github.com/user-attachments/assets/dcd38ee5-116f-4d07-9842-86d6c292e1c3)
+
+
