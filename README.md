@@ -1,11 +1,8 @@
 # HyperEAST
-
-
-PyTorch codes for "HyperEAST: An Enhanced Attention-Based Spectral-Spatial Transformer with Self-Supervised Pretraining for Hyperspectral Image Classification", 
-
 IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2025.
-
 Authors: 	Jialin Tang, Nan Ma, Chen Jia, Rui Tian, Yanhui Guo
+
+[📄 Paper](https://ieeexplore.ieee.org/document/11129658/keywords#keywords)
 
 # Citation
 
