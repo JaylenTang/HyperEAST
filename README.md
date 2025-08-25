@@ -18,14 +18,14 @@ Hyperspectral images (HSIs) are essential in geoscientific applications such as 
 # Citation
 
 ```bibtex
-@ARTICLE{106060196,
-  author={Tian, Rui and Liu, Danqing and Bai, Yu and Jin, Yu and Wan, Guanliang and Guo, Yanhui},
-  journal={IEEE Transactions on Geoscience and Remote Sensing},
-  title={Swin-MSP: A Shifted Windows Masked Spectral Pretraining Model for Hyperspectral Image},
-  year={2024},
-  volume={62},
+@ARTICLE{11129658,
+  author={Tang, Jialin and Ma, Nan and Jia, Chen and Tian, Rui and Guo, Yanhui},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
+  title={HyperEAST: An Enhanced Attention-Based Spectral-Spatial Transformer with Self-Supervised Pretraining for Hyperspectral Image Classification}, 
+  year={2025},
+  volume={},
   number={},
-  pages={1-14},
-  keywords={Hyperspectral imaging;Task analysis;Feature extraction;Image classification;Computer},
-  doi={10.1109/TGRS.2024.3431517}
-}
+  pages={1-15},
+  keywords={Transformers;Hyperspectral imaging;Computational modeling;Computer architecture;Complexity theory;Attention mechanisms;Image reconstruction;Feature extraction;Adaptation models;Context modeling;Hyperspectral image classification;Vision Transformer;self-supervised learning;linear fusion attention},
+  doi={10.1109/JSTARS.2025.3599855}}
+
