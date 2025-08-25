@@ -4,20 +4,6 @@ Authors: 	Jialin Tang, Nan Ma, Chen Jia, Rui Tian, Yanhui Guo
 
 [📄 Paper](https://ieeexplore.ieee.org/document/11129658/keywords#keywords)
 
-# Citation
-
-```bibtex
-@ARTICLE{106060196,
-  author={Tian, Rui and Liu, Danqing and Bai, Yu and Jin, Yu and Wan, Guanliang and Guo, Yanhui},
-  journal={IEEE Transactions on Geoscience and Remote Sensing},
-  title={Swin-MSP: A Shifted Windows Masked Spectral Pretraining Model for Hyperspectral Image},
-  year={2024},
-  volume={62},
-  number={},
-  pages={1-14},
-  keywords={Hyperspectral imaging;Task analysis;Feature extraction;Image classification;Computer},
-  doi={10.1109/TGRS.2024.3431517}
-}
 
 # Overall
 
@@ -49,3 +35,17 @@ and efficiency.
 ![LFAM](https://github.com/user-attachments/assets/dcd38ee5-116f-4d07-9842-86d6c292e1c3)
 
 
+# Citation
+
+```bibtex
+@ARTICLE{106060196,
+  author={Tian, Rui and Liu, Danqing and Bai, Yu and Jin, Yu and Wan, Guanliang and Guo, Yanhui},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  title={Swin-MSP: A Shifted Windows Masked Spectral Pretraining Model for Hyperspectral Image},
+  year={2024},
+  volume={62},
+  number={},
+  pages={1-14},
+  keywords={Hyperspectral imaging;Task analysis;Feature extraction;Image classification;Computer},
+  doi={10.1109/TGRS.2024.3431517}
+}
