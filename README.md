@@ -3,7 +3,7 @@ IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
 
 Authors: 	Jialin Tang, Nan Ma, Chen Jia, Rui Tian, Yanhui Guo
 
-[📄 Paper](https://ieeexplore.ieee.org/document/11129658/keywords#keywords)
+[📄 Paper](https://ieeexplore.ieee.org/document/11129658)
 
 
 # Overall
