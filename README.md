@@ -6,6 +6,26 @@ Authors: 	Jialin Tang, Nan Ma, Chen Jia, Rui Tian, Yanhui Guo
 [📄 Paper](https://ieeexplore.ieee.org/document/11129658)
 
 
+---
+
+## 📢 News
+- **[2025-09]** Pretraining code released  
+- **[2025-08]** Finetuning and testing code released with pretrained models  
+
+---
+## ⚙️ Usage
+
+### 1. Set up the environment and install required packages
+
+**Create conda environment with python**
+```bash
+conda create --name hypereast python=3.10
+conda activate hypereast
+
+pip install -r requirements.txt
+
+
+
 # Overall
 
 Hyperspectral images (HSIs) are essential in geoscientific applications such as resource exploration, precision agriculture, and environmental monitoring due to their rich spectral-spatial information. However, existing classification methods face notable limitations: PCA ignores spatial context, CNNs lack long-range modeling, and Vision Transformer (ViT)-based models often overfit under label-scarce conditions due to their high capacity and modality-agnostic design. To address these challenges, we propose HyperEAST, an efficient dual-branch ViT framework that explicitly decouples spectral and spatial feature modeling. At its core is a novel Linear Fusion Attention Mechanism (LFAM), which replaces dot-product attention with a softmax-free additive formulation based on lightweight convolutions, enabling local-global representation learning with linear complexity. To enhance robustness under limited labels, we adopt a modality-aware masked image modeling (MIM) strategy that separately reconstructs masked spectral and spatial tokens during self-supervised pretraining. We further introduce a dataset-aware hybrid loss combining cross-entropy and focal loss to mitigate class imbalance and sharpen decision boundaries. Experiments on four benchmark HSI datasets-WHU-Hi-HC, WHU-Hi-LK, Indian Pines, and Pavia University-demonstrate that HyperEAST achieves competitive accuracy, efficiency, and robustness. Code is available at https://github.com/JaylenTang/HyperEAST.
