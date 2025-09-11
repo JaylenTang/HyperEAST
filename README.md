@@ -21,9 +21,7 @@ Authors: 	Jialin Tang, Nan Ma, Chen Jia, Rui Tian, Yanhui Guo
 ```bash
 conda create --name hypereast python=3.10
 conda activate hypereast
-```
 pip install -r requirements.txt
-```
 main_finetune.py
 ```
 # Citation
