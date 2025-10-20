@@ -17,6 +17,17 @@ conda create --name hypereast python=3.7
 conda activate hypereast
 
 ```
+
+---
+
+### 💡 渲染后效果（GitHub 会显示为）：
+---
+
+**Install PyTorch with suitable cudatoolkit version. See [here](https://pytorch.org/get-started/locally/):**  
+```bash
+conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.6 -c pytorch -c nvidia
+
+
 # Citation
 
 ```bibtex
