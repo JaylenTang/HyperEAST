@@ -5,6 +5,9 @@ published at *IEEE Journal of Selected Topics in Applied Earth Observations and 
 
 <img width="5139" height="2905" alt="HyperEAST" src="https://github.com/user-attachments/assets/3e584b28-6237-40bf-822f-1780fccc3e22" />
 
+## 📰 News
+- **[2025-09]** Pretraining code released  
+- **[2025-08]** Finetuning and testing code released with pretrained models.
 
 ## 🧩 Usage
 
@@ -24,6 +27,10 @@ conda activate hypereast
 conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.6 -c pytorch -c nvidia
 ```
 
+```bash
+pip install -r requirements.txt
+```
+Download datasets and pretrained checkpoints
 
 
 
