@@ -4,12 +4,8 @@ published at *IEEE Journal of Selected Topics in Applied Earth Observations and 
 
 ---
 
-<p align="center">
-  <img src="assets/HyperEAST.drawio.png" width="90%">
-</p>
-<p align="center">
-  <em>Overview of the proposed HyperEAST architecture. The model employs Linear Fusion Attention Mechanism (LFAM) for efficient spectral–spatial representation learning with self-supervised pretraining.</em>
-</p>
+<img width="5139" height="2905" alt="HyperEAST" src="https://github.com/user-attachments/assets/3e584b28-6237-40bf-822f-1780fccc3e22" />
+
 
 ## ⚙️ Usage
 
