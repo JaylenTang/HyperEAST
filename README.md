@@ -1,7 +1,6 @@
 # [HyperEAST: An Enhanced Attention-Based Spectral–Spatial Transformer with Self-Supervised Pretraining for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/11129658)
 The official repository of the paper [**HyperEAST: An Enhanced Attention-Based Spectral–Spatial Transformer with Self-Supervised Pretraining for Hyperspectral Image Classification**](https://ieeexplore.ieee.org/document/11129658),  
-published at *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)*, 2025, Art. no. 11129658,  
-doi: [10.1109/JSTARS.2025.11129658](https://ieeexplore.ieee.org/document/11129658).
+published at *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)*, 2025, Art. no. 11129658, doi: [10.1109/JSTARS.2025.11129658](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11129658).
 
 ## 📢 News
 - **[2025-09]** Pretraining code released  
