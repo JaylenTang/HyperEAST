@@ -2,21 +2,20 @@
 The official repository of the paper [**HyperEAST: An Enhanced Attention-Based Spectral–Spatial Transformer with Self-Supervised Pretraining for Hyperspectral Image Classification**](https://ieeexplore.ieee.org/document/11129658),  
 published at *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)*, 2025, Art. no. 11129658, doi: [10.1109/JSTARS.2025.11129658](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11129658).
 
----
 
 <img width="5139" height="2905" alt="HyperEAST" src="https://github.com/user-attachments/assets/3e584b28-6237-40bf-822f-1780fccc3e22" />
 
 
-## ⚙️ Usage
+## 🧩 Usage
 
-### 1. Set up the environment and install required packages
+### Set up the environment and install required packages
 
-**Create conda environment with python**
+- Create [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) environment with Python:
+
 ```bash
-conda create --name hypereast python=3.10
+conda create --name hypereast python=3.7
 conda activate hypereast
-pip install -r requirements.txt
-main_finetune.py
+
 ```
 # Citation
 
