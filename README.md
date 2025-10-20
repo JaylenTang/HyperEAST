@@ -1,10 +1,8 @@
-# HyperEAST: An Enhanced Attention-Based Spectral-Spatial Transformer with Self-Supervised Pretraining for Hyperspectral Image Classification
-IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2025.
+# HyperEAST: An Enhanced Attention-Based Spectral–Spatial Transformer with Self-Supervised Pretraining for Hyperspectral Image Classification
 
-Authors: 	Jialin Tang, Nan Ma, Chen Jia, Rui Tian, Yanhui Guo
-
-[📄 Paper](https://ieeexplore.ieee.org/document/11129658)
-
+The official repository of the paper **HyperEAST: An Enhanced Attention-Based Spectral–Spatial Transformer with Self-Supervised Pretraining for Hyperspectral Image Classification**,  
+published at *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)*, 2025, Art. no. 11129658,  
+doi: [10.1109/JSTARS.2025.11129658](https://ieeexplore.ieee.org/document/11129658).
 
 ---
 
