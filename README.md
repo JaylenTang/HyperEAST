@@ -30,8 +30,22 @@ conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cud
 ```bash
 pip install -r requirements.txt
 ```
-Download datasets and pretrained checkpoints
+### 📦 Download datasets and pretrained checkpoints
 
+- Download **Indian Pines**, **Pavia University**, and **Houston** datasets using the link provided in [SpectralFormer](https://github.com/danfenghong/SpectralFormer).  
+- Download **Wuhan (WHU-HI)** datasets with `.mat` file format from [here](https://github.com/danfenghong/IEEE_TGRS_SpectralFormer).  
+  *(Download the split with 100 samples per class)*  
+- Download our **pretrained** and **finetuned** checkpoints from the links provided in the following table.
+
+| Dataset | Overall Acc. (%) | Average Acc. (%) | Pretrained Model | Finetuned Model |
+|----------|------------------|------------------|------------------|-----------------|
+| Indian Pines | **95.15** | 94.32 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_ip) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_ip) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_ip) |
+| Pavia University | **97.48** | 97.29 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_pu) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_pu) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_pu) |
+| WHU-HI-HC | **98.21** | 97.83 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_hc) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_hc) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_hc) |
+| WHU-HI-LK | **97.96** | 97.52 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_lk) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_lk) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_lk) |
+| WHU-HI-HH | **97.02** | 96.89 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_hh) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_hh) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_hh) |
+
+> 📁 *All checkpoints and datasets should be placed under the project root directory:*
 
 
 
