@@ -54,6 +54,8 @@ pip install -r requirements.txt
 
 ---
 
+> 💡 *Each dataset adopts its optimal CE/FL ratio configuration during fine-tuning.*
+
 ### 🧩 Model Checkpoints
 
 | Dataset | Spectral Pretrained Model | Spatial Pretrained Model | Finetuned Model |
@@ -65,7 +67,6 @@ pip install -r requirements.txt
 
 ---
 
-> 💡 *Each dataset adopts its optimal CE/FL ratio configuration during fine-tuning.*
 > 📁 *All checkpoints and datasets should be placed under the project root directory.*
 
 
