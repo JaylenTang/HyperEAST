@@ -19,14 +19,13 @@ published at *IEEE Journal of Selected Topics in Applied Earth Observations and 
 conda create --name hypereast python=3.7
 conda activate hypereast
 ```
-
 - Install PyTorch with suitable cudatoolkit version. See [here](https://pytorch.org/get-started/locally/):
-
 
 ```bash
 conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.6 -c pytorch -c nvidia
 ```
-
+- Install other requirements:
+- 
 ```bash
 pip install -r requirements.txt
 ```
@@ -59,15 +58,14 @@ pip install -r requirements.txt
 # Citation
 
 ```bibtex
-@ARTICLE{11129658,
+@ARTICLE{HyperEAST,
   author={Tang, Jialin and Ma, Nan and Jia, Chen and Tian, Rui and Guo, Yanhui},
   journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
   title={HyperEAST: An Enhanced Attention-Based Spectral-Spatial Transformer with Self-Supervised Pretraining for Hyperspectral Image Classification}, 
   year={2025},
-  volume={},
+  volume={18},
   number={},
   pages={1-15},
-  keywords={Transformers;Hyperspectral imaging;Computational modeling;Computer architecture;Complexity theory;Attention mechanisms;Image reconstruction;Feature extraction;Adaptation models;Context modeling;Hyperspectral image classification;Vision Transformer;self-supervised learning;linear fusion attention},
   doi={10.1109/JSTARS.2025.3599855}}
 ```
 🙏 Acknowledgement
