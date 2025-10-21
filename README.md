@@ -104,6 +104,17 @@ python main_finetune.py --dataset 'WHU-Hi-LK' --epochs 40 --learning_rate 1e-3 \
 --pretrained_spatial './data/pretrained_spatial.pth' \
 --output_dir './output'
 ```
+## ⚙️ Pretraining
+
+Before fine-tuning, you can pretrain the **spectral** and **spatial** transformers independently.  
+Navigate to the `pretraining` folder and run the following commands:
+
+```bash
+# Pretraining the spatial transformer with Indian Pines dataset
+python main_pretrain.py --dataset='Indian' --pretrain_mode='spatial' \
+--output_dir='<path_to_save_spatial_model>'
+
+
 
 # Citation
 
