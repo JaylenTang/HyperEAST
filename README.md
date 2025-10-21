@@ -86,14 +86,6 @@ python main_finetune.py --dataset 'Indian' --epochs 80 --learning_rate 3e-4 \
 --output_dir './output'
 ```
 
-- University of Pavia
-```bash
-
-python main_finetune.py --dataset 'Pavia' --epochs 80 --learning_rate 1e-3 \
---pretrained_spectral './data/pretrained_spectral.pth' \
---pretrained_spatial './data/pretrained_spatial.pth' \
---output_dir './output'
-```
 
 - WHU - Hi - HanChuan
 ```bash
@@ -112,6 +104,18 @@ python main_finetune.py --dataset 'WHU-Hi-LK' --epochs 40 --learning_rate 1e-3 \
 --pretrained_spatial './data/pretrained_spatial.pth' \
 --output_dir './output'
 ```
+
+
+- University of Pavia
+```bash
+
+python main_finetune.py --dataset 'Pavia' --epochs 80 --learning_rate 1e-3 \
+--pretrained_spectral './data/pretrained_spectral.pth' \
+--pretrained_spatial './data/pretrained_spatial.pth' \
+--output_dir './output'
+```
+
+
 ## ⚙️ Pretraining
 
 Before fine-tuning, you can pretrain the **spectral** and **spatial** transformers independently.  
