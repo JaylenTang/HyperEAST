@@ -37,13 +37,12 @@ pip install -r requirements.txt
   *(Download the split with 100 samples per class)*  
 - Download our **pretrained** and **finetuned** checkpoints from the links provided in the following table.
 
-| Dataset | Overall Acc. (%) | Average Acc. (%) | Pretrained Model | Finetuned Model |
-|----------|------------------|------------------|------------------|-----------------|
-| Indian Pines | **95.15** | 94.32 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_ip) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_ip) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_ip) |
-| Pavia University | **97.48** | 97.29 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_pu) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_pu) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_pu) |
-| WHU-HI-HC | **98.21** | 97.83 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_hc) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_hc) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_hc) |
-| WHU-HI-LK | **97.96** | 97.52 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_lk) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_lk) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_lk) |
-| WHU-HI-HH | **97.02** | 96.89 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_hh) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_hh) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_hh) |
+| Dataset | Overall Acc. (%) | Average Acc. (%) | Kappa (%)| Pretrained Model | Finetuned Model |
+|----------|------------------|------------------|------------------|------------------|-----------------|
+| Indian Pines | **93.81** | 96.89 | 92.91 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_ip) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_ip) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_ip) |
+| Pavia University | **95.36** | 95.24 | 93.76 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_pu) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_pu) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_pu) |
+| WHU-HI-HC | **93.00** | 91.82 | 91.83 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_hc) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_hc) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_hc) |
+| WHU-HI-LK | **98.87** | 99.75 | 98.51 | [spectral_ckpt](https://github.com/user-attachments/assets/example_spectral_lk) \| [spatial_ckpt](https://github.com/user-attachments/assets/example_spatial_lk) | [finetuned_ckpt](https://github.com/user-attachments/assets/example_finetuned_lk) |
 
 > 📁 *All checkpoints and datasets should be placed under the project root directory:*
 
