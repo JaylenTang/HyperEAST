@@ -35,8 +35,15 @@ pip install -r requirements.txt
   *(Download the split with 100 samples per class)*  
 - Download our **pretrained** and **finetuned** checkpoints from the links provided in the following table.
 
+## Baseline
+| Dataset | Overall Acc. (%) | Average Acc. (%) | Kappa (%)
+|:--:|:--:|:--:|:--:|
+| Indian Pines | **87.66** | 91.72 | 85.93 |
+| WHU-Hi-HanChuan | **92.17** | 91.07 | 90.87 |
+| WHU-Hi-LongKou | **98.19** | 98.71 | 97.63 |
+| University of Pavia  | **95.15** | 93.72 | 93.46 |
 
-| Dataset | Overall Acc. (%) | Average Acc. (%) | Kappa (%) | CE Loss Ratio | FL Loss Ratio | Pretrained Model | Finetuned Model |
+| Dataset | OA (%) | AA (%) | Kappa (%) |  CE Loss Ratio | FL Loss Ratio | Pretrained Model | Finetuned Model |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | IP | **93.81** | 96.89 | 92.91 | 0.5 | 0.5 | [spectral_ip](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spectral.pth) \| [spatial_ip](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spatial.pth) | [finetuned_ip](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_ip.pt) |
 | HC | **93.00** | 91.82 | 91.83 | 0.2 | 0.8 | [spectral_hc](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spectral.pth) \| [spatial_hc](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spatial.pth) | [finetuned_hc](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_hc.pt) |
@@ -44,12 +51,7 @@ pip install -r requirements.txt
 | PU | **95.36** | 95.24 | 93.76 | 0.6 | 0.4 | [spectral_pu](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spectral.pth) \| [spatial_pu](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spatial.pth) | [finetuned_pu](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_pu.pt) |
 > 📁 *All checkpoints and datasets should be placed under the project root directory.*
 
-| Dataset | OA (%) | AA (%) | Kappa (%) |
-|:--:|:--:|:--:|:--:|
-| IP | **87.66** | 91.72 | 85.93 |
-| HC | **92.17** | 91.07 | 90.87 |
-| LK | **98.19** | 98.71 | 97.63 |
-| PU | **95.15** | 93.72 | 93.46 |
+
 
 
 
