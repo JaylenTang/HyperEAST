@@ -128,6 +128,7 @@ This repository builds upon the following works:
 - [**Swin-MSP: A Shifted Windows Masked Spectral Pretraining Model for Hyperspectral Image Classification**](https://ieeexplore.ieee.org/document/10606196) [[Code]](https://github.com/teaRRe/Swin-MSP)
 - [**Spectralformer: Rethinking hyperspectral image classification with transformers**](https://ieeexplore.ieee.org/document/9627165) [[Code]](https://github.com/danfenghong/IEEE_TGRS_SpectralFormer)
 - [**Masked Auto-Encoding Spectral–Spatial Transformer for Hyperspectral Image Classification**](https://ieeexplore.ieee.org/document/9931741) [[Code]](https://github.com/ibanezfd/MAEST)
+- [**Hyperspectral Image Classification Using Group-Aware Hierarchical Transformer**](https://ieeexplore.ieee.org/document/9895238)[Code]](https://github.com/MeiShaohui/Group-Aware-Hierarchical-Transformer)
 - [**DeepHyperX [Code]**](https://github.com/xiachangxue/DeepHyperX)
 
 
