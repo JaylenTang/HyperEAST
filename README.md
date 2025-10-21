@@ -135,18 +135,18 @@ python main_pretrain.py --dataset='Indian' --pretrain_mode='spatial' \
 - WHU-Hi-HanChuan
 ```bash
 
-python main_pretrain.py --dataset=''WHU-Hi-HC' --pretrain_mode='spectral' \
+python main_pretrain.py --dataset='WHU-Hi-HC' --pretrain_mode='spectral' \
 --output_dir='<path_to_save_spectral_model>'
-python main_pretrain.py --dataset=''WHU-Hi-HC' --pretrain_mode='spatial' \
+python main_pretrain.py --dataset='WHU-Hi-HC' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
 
 ```
 - WHU-Hi-LongKou
 ```bash
 
-python main_pretrain.py --dataset=''WHU-Hi-LK' --pretrain_mode='spectral' \
+python main_pretrain.py --dataset='WHU-Hi-LK' --pretrain_mode='spectral' \
 --output_dir='<path_to_save_spectral_model>'
-python main_pretrain.py --dataset=''WHU-Hi-LK' --pretrain_mode='spatial' \
+python main_pretrain.py --dataset='WHU-Hi-LK' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
 ```
 
