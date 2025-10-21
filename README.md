@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 | Dataset | Overall Acc. (%) | Average Acc. (%) | Kappa (%) | Pretrained Model |  | Finetuned Model |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|  |  |  |  | spatial_ckpt | spectral_ckpt |  |
+
 | Indian Pines | **93.81** | 96.89 | 92.91 | [spatial_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spatial.pth) | [spectral_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spectral.pth) | [finetuned_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_ip.pt) |
 | University of Pavia | **95.36** | 95.24 | 93.76 | [spatial_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spatial.pth) | [spectral_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spectral.pth) | [finetuned_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_pu.pt) |
 | WHU-Hi-HanChuan | **93.00** | 91.82 | 91.83 | [spatial_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spatial.pth) | [spectral_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spectral.pth) | [finetuned_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_hc.pt) |
