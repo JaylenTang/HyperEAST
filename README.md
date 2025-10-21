@@ -44,7 +44,7 @@ pip install -r requirements.txt
 | PU | **95.36** | 95.24 | 93.76 | 0.6 | 0.4 | [spectral_pu](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spectral.pth) \| [spatial_pu](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spatial.pth) | [finetuned_pu](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_pu.pt) |
 > 📁 *All checkpoints and datasets should be placed under the project root directory.*
 
-| Dataset | Overall Acc. (%) | Average Acc. (%) | Kappa (%) |
+| Dataset | OA (%) | AA (%) | Kappa (%) |
 |:--:|:--:|:--:|:--:|
 | IP | **87.66** | 91.72 | 85.93 |
 | HC | **92.17** | 91.07 | 90.87 |
