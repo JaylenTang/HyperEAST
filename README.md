@@ -35,24 +35,45 @@ pip install -r requirements.txt
   *(Download the split with 100 samples per class)*  
 - Download our **pretrained** and **finetuned** checkpoints from the links provided in the following table.
 
-| Dataset | Overall Acc. (%) | Average Acc. (%) | Kappa (%) | Pretrained Model | Finetuned Model |
-|:--:|:--:|:--:|:--:|:--:|:--:|
-| Indian Pines | **93.81** | 96.89 | 92.91 | [spectral_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spectral.pth) \| [spatial_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spatial.pth) | [finetuned_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_ip.pt) |
-| University of Pavia | **95.36** | 95.24 | 93.76 | [spectral_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spectral.pth) \| [spatial_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spatial.pth) | [finetuned_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_pu.pt) |
-| WHU-HI-HC | **93.00** | 91.82 | 91.83 | [spectral_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spectral.pth) \| [spatial_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spatial.pth) | [finetuned_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_hc.pt) |
-| WHU-HI-LK | **98.87** | 99.75 | 98.51 | [spectral_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-LK/pretrained_spectral.pth) \| [spatial_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-LK/pretrained_spatial.pth) | [finetuned_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_lk.pt) |
+| Dataset | Overall Acc. (%) | Average Acc. (%) | Kappa (%) | Pretrained Model |  | Finetuned Model |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|  |  |  |  | spatial_ckpt | spectral_ckpt |  |
+| Indian Pines | **93.81** | 96.89 | 92.91 | [spatial_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spatial.pth) | [spectral_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spectral.pth) | [finetuned_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_ip.pt) |
+| University of Pavia | **95.36** | 95.24 | 93.76 | [spatial_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spatial.pth) | [spectral_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spectral.pth) | [finetuned_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_pu.pt) |
+| WHU-Hi-HanChuan | **93.00** | 91.82 | 91.83 | [spatial_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spatial.pth) | [spectral_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spectral.pth) | [finetuned_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_hc.pt) |
+| WHU-Hi-LongKou | **98.87** | 99.75 | 98.51 | [spatial_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-LK/pretrained_spatial.pth) | [spectral_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-LK/pretrained_spectral.pth) | [finetuned_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_lk.pt) |
+
 
 
 > 📁 *All checkpoints and datasets should be placed under the project root directory.*
 
+## 🧠 Finetuning
 
+To fine-tune **HyperEAST** using pretrained spectral and spatial models, run the following commands:
 
+```bash
+# Indian Pines
+python main_finetune.py --dataset 'Indian' --epochs 80 --learning_rate 3e-4 \
+--pretrained_spectral './data/pretrained_spectral.pth' \
+--pretrained_spatial './data/pretrained_spatial.pth' \
+--output_dir './output'
 
+# University of Pavia
+python main_finetune.py --dataset 'Pavia' --epochs 80 --learning_rate 1e-3 \
+--pretrained_spectral './data/pretrained_spectral.pth' \
+--pretrained_spatial './data/pretrained_spatial.pth' \
+--output_dir './output'
 
+# WHU-Hi-HanChuan / WHU-Hi-HongHu / WHU-Hi-LongKou
+python main_finetune.py --dataset 'WHU-Hi-HC' --epochs 40 --learning_rate 1e-3 \
+--pretrained_spectral './data/pretrained_spectral.pth' \
+--pretrained_spatial './data/pretrained_spatial.pth' \
+--output_dir './output'
 
-
-
-
+python main_finetune.py --dataset 'WHU-Hi-LK' --epochs 40 --learning_rate 1e-3 \
+--pretrained_spectral './data/pretrained_spectral.pth' \
+--pretrained_spatial './data/pretrained_spatial.pth' \
+--output_dir './output'
 
 
 # Citation
@@ -72,16 +93,13 @@ pip install -r requirements.txt
 
 This repository builds upon the following works:
 
-## 🙏 Acknowledgement
-
-This repository builds upon the following works:
 
 - [**FactoFormer: Factorized Hyperspectral Transformers with Self-Supervised Pretraining**](https://ieeexplore.ieee.org/document/10360846) [[Code]](https://github.com/csiro-robotics/FactoFormer)
 - [**CAS-ViT: Convolutional Additive Self-Attention Vision Transformers for Efficient Mobile Applications**](https://arxiv.org/abs/2408.03703) [[Code]](https://github.com/Tianfang-Zhang/CAS-ViT)
 - [**Swin-MSP: A Shifted Windows Masked Spectral Pretraining Model for Hyperspectral Image Classification**](https://ieeexplore.ieee.org/document/10606196) [[Code]](https://github.com/teaRRe/Swin-MSP)
 - [**Spectralformer: Rethinking hyperspectral image classification with transformers**](https://ieeexplore.ieee.org/document/9627165) [[Code]](https://github.com/danfenghong/IEEE_TGRS_SpectralFormer)
 - [**Masked Auto-Encoding Spectral–Spatial Transformer for Hyperspectral Image Classification**](https://ieeexplore.ieee.org/document/9931741) [[Code]](https://github.com/ibanezfd/MAEST)
-- [**DeepHyperX[Code]**](https://github.com/xiachangxue/DeepHyperX)
+- [**DeepHyperX [Code]**](https://github.com/xiachangxue/DeepHyperX)
 
 
 
