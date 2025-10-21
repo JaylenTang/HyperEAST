@@ -76,29 +76,37 @@ pip install -r requirements.txt
 
 To fine-tune **HyperEAST** using pretrained spectral and spatial models, run the following commands:
 
-```bash
+
 # Indian Pines
+```bash
+
 python main_finetune.py --dataset 'Indian' --epochs 80 --learning_rate 3e-4 \
 --pretrained_spectral './data/pretrained_spectral.pth' \
 --pretrained_spatial './data/pretrained_spatial.pth' \
 --output_dir './output'
 ```
-```bash
+
 # University of Pavia
+```bash
+
 python main_finetune.py --dataset 'Pavia' --epochs 80 --learning_rate 1e-3 \
 --pretrained_spectral './data/pretrained_spectral.pth' \
 --pretrained_spatial './data/pretrained_spatial.pth' \
 --output_dir './output'
 ```
-```bash
+
 # WHU - Hi - HanChuan
+```bash
+
 python main_finetune.py --dataset 'WHU-Hi-HC' --epochs 40 --learning_rate 1e-3 \
 --pretrained_spectral './data/pretrained_spectral.pth' \
 --pretrained_spatial './data/pretrained_spatial.pth' \
 --output_dir './output'
 ```
-```bash
+
 # WHU- Hi - LongKou
+```bash
+
 python main_finetune.py --dataset 'WHU-Hi-LK' --epochs 40 --learning_rate 1e-3 \
 --pretrained_spectral './data/pretrained_spectral.pth' \
 --pretrained_spatial './data/pretrained_spatial.pth' \
@@ -109,11 +117,13 @@ python main_finetune.py --dataset 'WHU-Hi-LK' --epochs 40 --learning_rate 1e-3 \
 Before fine-tuning, you can pretrain the **spectral** and **spatial** transformers independently.  
 Navigate to the `pretraining` folder and run the following commands:
 
-```bash
+
 # Pretraining the spatial transformer with Indian Pines dataset
+```bash
+
 python main_pretrain.py --dataset='Indian' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
-
+```
 
 
 # Citation
