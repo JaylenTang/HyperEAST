@@ -87,7 +87,7 @@ python main_finetune.py --dataset 'Indian' --epochs 80 --learning_rate 3e-4 \
 ```
 
 
-- WHU - Hi - HanChuan
+- WHU-Hi-HanChuan
 ```bash
 
 python main_finetune.py --dataset 'WHU-Hi-HC' --epochs 40 --learning_rate 1e-3 \
@@ -96,7 +96,7 @@ python main_finetune.py --dataset 'WHU-Hi-HC' --epochs 40 --learning_rate 1e-3 \
 --output_dir './output'
 ```
 
-- WHU- Hi - LongKou
+- WHU-Hi-LongKou
 ```bash
 
 python main_finetune.py --dataset 'WHU-Hi-LK' --epochs 40 --learning_rate 1e-3 \
@@ -126,26 +126,26 @@ Navigate to the `pretraining` folder and run the following commands:
 ```bash
 
 python main_pretrain.py --dataset='Indian' --pretrain_mode='spectral' \
---output_dir='<path_to_save_spatial_model>'
+--output_dir='<path_to_save_spectral_model>'
 python main_pretrain.py --dataset='Indian' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
 
 ```
 
-- WHU - Hi - HanChuan
+- WHU-Hi-HanChuan
 ```bash
 
 python main_pretrain.py --dataset=''WHU-Hi-HC' --pretrain_mode='spectral' \
---output_dir='<path_to_save_spatial_model>'
+--output_dir='<path_to_save_spectral_model>'
 python main_pretrain.py --dataset=''WHU-Hi-HC' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
 
 ```
-- WHU- Hi - LongKou
+- WHU-Hi-LongKou
 ```bash
 
 python main_pretrain.py --dataset=''WHU-Hi-LK' --pretrain_mode='spectral' \
---output_dir='<path_to_save_spatial_model>'
+--output_dir='<path_to_save_spectral_model>'
 python main_pretrain.py --dataset=''WHU-Hi-LK' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
 ```
@@ -153,7 +153,7 @@ python main_pretrain.py --dataset=''WHU-Hi-LK' --pretrain_mode='spatial' \
 - University of Pavia
 ```bash
 python main_pretrain.py --dataset='Pavia' --pretrain_mode='spectral' \
---output_dir='<path_to_save_spatial_model>'
+--output_dir='<path_to_save_spectral_model>'
 python main_pretrain.py --dataset='Pavia' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
 ```
