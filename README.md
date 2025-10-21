@@ -72,10 +72,16 @@ pip install -r requirements.txt
 
 This repository builds upon the following works:
 
-- [**FactoFormer: Factorized Hyperspectral Transformers with Self-Supervised Pretraining**](https://ieeexplore.ieee.org/document/10360846)  
-- [**CAS-ViT: Convolutional Additive Self-Attention Vision Transformers for Efficient Mobile Applications**](https://arxiv.org/abs/2408.03703)
+## 🙏 Acknowledgement
 
+This repository builds upon the following works:
 
+- [**FactoFormer: Factorized Hyperspectral Transformers with Self-Supervised Pretraining**](https://ieeexplore.ieee.org/document/10360846) [[Code]](https://github.com/csiro-robotics/FactoFormer)
+- [**CAS-ViT: Convolutional Additive Self-Attention Vision Transformers for Efficient Mobile Applications**](https://arxiv.org/abs/2408.03703) [[Code]](https://github.com/Tianfang-Zhang/CAS-ViT)
+- [**Swin-MSP: A Shifted Windows Masked Spectral Pretraining Model for Hyperspectral Image Classification**](https://ieeexplore.ieee.org/document/10606196) [[Code]](https://github.com/teaRRe/Swin-MSP)
+- [**Spectralformer: Rethinking hyperspectral image classification with transformers**](https://ieeexplore.ieee.org/document/9627165) [[Code]](https://github.com/danfenghong/IEEE_TGRS_SpectralFormer)
+- [**Masked Auto-Encoding Spectral–Spatial Transformer for Hyperspectral Image Classification**](https://ieeexplore.ieee.org/document/9931741) [[Code]](https://github.com/ibanezfd/MAEST)
+- [**DeepHyperX**](https://github.com/xiachangxue/DeepHyperX)
 
 
 
