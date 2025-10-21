@@ -77,7 +77,7 @@ pip install -r requirements.txt
 To fine-tune **HyperEAST** using pretrained spectral and spatial models, run the following commands:
 
 
-# Indian Pines
+### Indian Pines
 ```bash
 
 python main_finetune.py --dataset 'Indian' --epochs 80 --learning_rate 3e-4 \
@@ -86,7 +86,7 @@ python main_finetune.py --dataset 'Indian' --epochs 80 --learning_rate 3e-4 \
 --output_dir './output'
 ```
 
-# University of Pavia
+### University of Pavia
 ```bash
 
 python main_finetune.py --dataset 'Pavia' --epochs 80 --learning_rate 1e-3 \
@@ -95,7 +95,7 @@ python main_finetune.py --dataset 'Pavia' --epochs 80 --learning_rate 1e-3 \
 --output_dir './output'
 ```
 
-# WHU - Hi - HanChuan
+### WHU - Hi - HanChuan
 ```bash
 
 python main_finetune.py --dataset 'WHU-Hi-HC' --epochs 40 --learning_rate 1e-3 \
@@ -104,7 +104,7 @@ python main_finetune.py --dataset 'WHU-Hi-HC' --epochs 40 --learning_rate 1e-3 \
 --output_dir './output'
 ```
 
-# WHU- Hi - LongKou
+### WHU- Hi - LongKou
 ```bash
 
 python main_finetune.py --dataset 'WHU-Hi-LK' --epochs 40 --learning_rate 1e-3 \
@@ -118,12 +118,33 @@ Before fine-tuning, you can pretrain the **spectral** and **spatial** transforme
 Navigate to the `pretraining` folder and run the following commands:
 
 
-# Pretraining the spatial transformer with Indian Pines dataset
+### Indian Pines
 ```bash
 
 python main_pretrain.py --dataset='Indian' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
 ```
+
+### WHU - Hi - HanChuan
+```bash
+
+python main_pretrain.py --dataset='Indian' --pretrain_mode='spatial' \
+--output_dir='<path_to_save_spatial_model>'
+```
+### WHU - Hi - HanChuan
+```bash
+
+python main_pretrain.py --dataset='Indian' --pretrain_mode='spatial' \
+--output_dir='<path_to_save_spatial_model>'
+```
+
+### University of Pavia
+```bash
+
+python main_pretrain.py --dataset='Indian' --pretrain_mode='spatial' \
+--output_dir='<path_to_save_spatial_model>'
+```
+
 
 
 # Citation
