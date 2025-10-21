@@ -39,8 +39,8 @@ pip install -r requirements.txt
 | Dataset | Overall Acc. (%) | Average Acc. (%) | Kappa (%)
 |:--:|:--:|:--:|:--:|
 | Indian Pines | **87.66** | 91.72 | 85.93 |
-| WHU-Hi-HanChuan | **92.17** | 91.07 | 90.87 |
-| WHU-Hi-LongKou | **98.19** | 98.71 | 97.63 |
+| WHU - Hi - HanChuan | **92.17** | 91.07 | 90.87 |
+| WHU- Hi - LongKou | **98.19** | 98.71 | 97.63 |
 | University of Pavia  | **95.15** | 93.72 | 93.46 |
 
 ## Final Results: LFAM (Spectral Branch) + Dataset-Optimal Hybrid Loss
@@ -90,13 +90,14 @@ python main_finetune.py --dataset 'Pavia' --epochs 80 --learning_rate 1e-3 \
 --output_dir './output'
 ```
 ```bash
-# WHU-Hi-HanChuan / WHU-Hi-HongHu / WHU-Hi-LongKou
+# WHU - Hi - HanChuan
 python main_finetune.py --dataset 'WHU-Hi-HC' --epochs 40 --learning_rate 1e-3 \
 --pretrained_spectral './data/pretrained_spectral.pth' \
 --pretrained_spatial './data/pretrained_spatial.pth' \
 --output_dir './output'
 ```
 ```bash
+# WHU- Hi - LongKou
 python main_finetune.py --dataset 'WHU-Hi-LK' --epochs 40 --learning_rate 1e-3 \
 --pretrained_spectral './data/pretrained_spectral.pth' \
 --pretrained_spatial './data/pretrained_spatial.pth' \
