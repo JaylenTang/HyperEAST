@@ -44,12 +44,25 @@ pip install -r requirements.txt
 | University of Pavia  | **95.15** | 93.72 | 93.46 |
 
 ## Final Results: LFAM (Spectral Branch) + Dataset-Optimal Hybrid Loss
-| Dataset | OA (%) | AA (%) | Kappa (%) |  CE Loss Ratio | FL Loss Ratio | Pretrained Model | Finetuned Model |
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| IP | **93.81** | 96.89 | 92.91 | 0.5 | 0.5 | [spectral_ip](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spectral.pth) \| [spatial_ip](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spatial.pth) | [finetuned_ip](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_ip.pt) |
-| HC | **93.00** | 91.82 | 91.83 | 0.2 | 0.8 | [spectral_hc](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spectral.pth) \| [spatial_hc](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spatial.pth) | [finetuned_hc](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_hc.pt) |
-| LK | **98.87** | 99.75 | 98.51 | 0.8 | 0.2 | [spectral_lk](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-LK/pretrained_spectral.pth) \| [spatial_lk](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-LK/pretrained_spatial.pth) | [finetuned_lk](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_lk.pt) |
-| PU | **95.36** | 95.24 | 93.76 | 0.6 | 0.4 | [spectral_pu](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spectral.pth) \| [spatial_pu](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spatial.pth) | [finetuned_pu](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_pu.pt) |
+
+| Dataset | OA (%) | AA (%) | Kappa (%) | CE Loss Ratio | FL Loss Ratio | Finetuned Model |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| IP | **93.81** | 96.89 | 92.91 | 0.5 | 0.5 | [finetuned_ip](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_ip.pt) |
+| HC | **93.00** | 91.82 | 91.83 | 0.2 | 0.8 | [finetuned_hc](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_hc.pt) |
+| LK | **98.87** | 99.75 | 98.51 | 0.8 | 0.2 | [finetuned_lk](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_lk.pt) |
+| PU | **95.36** | 95.24 | 93.76 | 0.6 | 0.4 | [finetuned_pu](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_pu.pt) |
+
+---
+
+### 🧩 Pretrained Model Checkpoints
+
+| Dataset | Spectral Pretrained Model | Spatial Pretrained Model |
+|:--:|:--:|:--:|
+| IP | [spectral_ip](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spectral.pth) | [spatial_ip](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spatial.pth) |
+| HC | [spectral_hc](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spectral.pth) | [spatial_hc](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spatial.pth) |
+| LK | [spectral_lk](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-LK/pretrained_spectral.pth) | [spatial_lk](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-LK/pretrained_spatial.pth) |
+| PU | [spectral_pu](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spectral.pth) | [spatial_pu](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spatial.pth) |
+
 > 📁 *All checkpoints and datasets should be placed under the project root directory.*
 
 
