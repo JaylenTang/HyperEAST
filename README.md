@@ -43,6 +43,7 @@ pip install -r requirements.txt
 | WHU-Hi-LongKou | **98.19** | 98.71 | 97.63 |
 | University of Pavia  | **95.15** | 93.72 | 93.46 |
 
+## Final Results: LFAM (Spectral Branch) + Dataset-Optimal Hybrid Loss
 | Dataset | OA (%) | AA (%) | Kappa (%) |  CE Loss Ratio | FL Loss Ratio | Pretrained Model | Finetuned Model |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | IP | **93.81** | 96.89 | 92.91 | 0.5 | 0.5 | [spectral_ip](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spectral.pth) \| [spatial_ip](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spatial.pth) | [finetuned_ip](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_ip.pt) |
