@@ -125,26 +125,35 @@ Navigate to the `pretraining` folder and run the following commands:
 - Indian Pines
 ```bash
 
+python main_pretrain.py --dataset='Indian' --pretrain_mode='spectral' \
+--output_dir='<path_to_save_spatial_model>'
 python main_pretrain.py --dataset='Indian' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
+
 ```
 
 - WHU - Hi - HanChuan
 ```bash
 
-python main_pretrain.py --dataset=''WHU-Hi-LK' --pretrain_mode='spatial' \
+python main_pretrain.py --dataset=''WHU-Hi-HC' --pretrain_mode='spectral' \
+--output_dir='<path_to_save_spatial_model>'
+python main_pretrain.py --dataset=''WHU-Hi-HC' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
 
 ```
-- WHU - Hi - HanChuan
+- WHU- Hi - LongKou
 ```bash
 
-python main_pretrain.py --dataset=''WHU-Hi-HC' --pretrain_mode='spatial' \
+python main_pretrain.py --dataset=''WHU-Hi-LK' --pretrain_mode='spectral' \
+--output_dir='<path_to_save_spatial_model>'
+python main_pretrain.py --dataset=''WHU-Hi-LK' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
 ```
 
 - University of Pavia
 ```bash
+python main_pretrain.py --dataset='Pavia' --pretrain_mode='spectral' \
+--output_dir='<path_to_save_spatial_model>'
 python main_pretrain.py --dataset='Pavia' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
 ```
