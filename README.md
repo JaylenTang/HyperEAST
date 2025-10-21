@@ -35,8 +35,8 @@ pip install -r requirements.txt
   *(Download the split with 100 samples per class)*  
 - Download our **pretrained** and **finetuned** checkpoints from the links provided in the following table.
 
-| Dataset | Overall Acc. (%) | Average Acc. (%) | Kappa (%) | Pretrained Model |  | Finetuned Model |
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| Dataset | Overall Acc. (%) | Average Acc. (%) | Kappa (%) | Pretrained Model | Finetuned Model |
+|:--:|:--:|:--:|:--:|:--:|:--:|
 
 | Indian Pines | **93.81** | 96.89 | 92.91 | [spatial_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spatial.pth) | [spectral_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spectral.pth) | [finetuned_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_ip.pt) |
 | University of Pavia | **95.36** | 95.24 | 93.76 | [spatial_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spatial.pth) | [spectral_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spectral.pth) | [finetuned_ckpt](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_pu.pt) |
