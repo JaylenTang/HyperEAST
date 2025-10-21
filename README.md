@@ -45,27 +45,28 @@ pip install -r requirements.txt
 
 ## Final Results: LFAM (Spectral Branch) + Dataset-Optimal Hybrid Loss
 
-| Dataset | OA (%) | AA (%) | Kappa (%) | CE Loss Ratio | FL Loss Ratio | Finetuned Model |
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| IP | **93.81** | 96.89 | 92.91 | 0.5 | 0.5 | [finetuned_ip](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_ip.pt) |
-| HC | **93.00** | 91.82 | 91.83 | 0.2 | 0.8 | [finetuned_hc](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_hc.pt) |
-| LK | **98.87** | 99.75 | 98.51 | 0.8 | 0.2 | [finetuned_lk](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_lk.pt) |
-| PU | **95.36** | 95.24 | 93.76 | 0.6 | 0.4 | [finetuned_pu](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_pu.pt) |
+| Dataset | OA (%) | AA (%) | Kappa (%) | CE Loss Ratio | FL Loss Ratio |
+|:--:|:--:|:--:|:--:|:--:|:--:|
+| IP | **93.81** | 96.89 | 92.91 | 0.5 | 0.5 |
+| HC | **93.00** | 91.82 | 91.83 | 0.2 | 0.8 |
+| LK | **98.87** | 99.75 | 98.51 | 0.8 | 0.2 |
+| PU | **95.36** | 95.24 | 93.76 | 0.6 | 0.4 |
 
 ---
 
-### 🧩 Pretrained Model Checkpoints
+### 🧩 Model Checkpoints
 
-| Dataset | Spectral Pretrained Model | Spatial Pretrained Model |
-|:--:|:--:|:--:|
-| IP | [spectral_ip](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spectral.pth) | [spatial_ip](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spatial.pth) |
-| HC | [spectral_hc](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spectral.pth) | [spatial_hc](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spatial.pth) |
-| LK | [spectral_lk](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-LK/pretrained_spectral.pth) | [spatial_lk](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-LK/pretrained_spatial.pth) |
-| PU | [spectral_pu](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spectral.pth) | [spatial_pu](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spatial.pth) |
+| Dataset | Spectral Pretrained Model | Spatial Pretrained Model | Finetuned Model |
+|:--:|:--:|:--:|:--:|
+| IP | [spectral_ip](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spectral.pth) | [spatial_ip](https://github.com/JaylenTang/HyperEAST/blob/main/data/IndianPine/pretrained_spatial.pth) | [finetuned_ip](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_ip.pt) |
+| HC | [spectral_hc](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spectral.pth) | [spatial_hc](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-HC/pretrained_spatial.pth) | [finetuned_hc](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_hc.pt) |
+| LK | [spectral_lk](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-LK/pretrained_spectral.pth) | [spatial_lk](https://github.com/JaylenTang/HyperEAST/blob/main/data/WHU-Hi-LK/pretrained_spatial.pth) | [finetuned_lk](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_lk.pt) |
+| PU | [spectral_pu](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spectral.pth) | [spatial_pu](https://github.com/JaylenTang/HyperEAST/blob/main/data/University%20of%20Pavia/pretrained_spatial.pth) | [finetuned_pu](https://github.com/JaylenTang/HyperEAST/blob/main/finetuned_pu.pt) |
 
+---
+
+> 💡 *Each dataset adopts its optimal CE/FL ratio configuration during fine-tuning.*
 > 📁 *All checkpoints and datasets should be placed under the project root directory.*
-
-
 
 
 
@@ -80,24 +81,27 @@ python main_finetune.py --dataset 'Indian' --epochs 80 --learning_rate 3e-4 \
 --pretrained_spectral './data/pretrained_spectral.pth' \
 --pretrained_spatial './data/pretrained_spatial.pth' \
 --output_dir './output'
-
+```
+```bash
 # University of Pavia
 python main_finetune.py --dataset 'Pavia' --epochs 80 --learning_rate 1e-3 \
 --pretrained_spectral './data/pretrained_spectral.pth' \
 --pretrained_spatial './data/pretrained_spatial.pth' \
 --output_dir './output'
-
+```
+```bash
 # WHU-Hi-HanChuan / WHU-Hi-HongHu / WHU-Hi-LongKou
 python main_finetune.py --dataset 'WHU-Hi-HC' --epochs 40 --learning_rate 1e-3 \
 --pretrained_spectral './data/pretrained_spectral.pth' \
 --pretrained_spatial './data/pretrained_spatial.pth' \
 --output_dir './output'
-
+```
+```bash
 python main_finetune.py --dataset 'WHU-Hi-LK' --epochs 40 --learning_rate 1e-3 \
 --pretrained_spectral './data/pretrained_spectral.pth' \
 --pretrained_spatial './data/pretrained_spatial.pth' \
 --output_dir './output'
-
+```
 
 # Citation
 
