@@ -128,20 +128,20 @@ python main_pretrain.py --dataset='Indian' --pretrain_mode='spatial' \
 ### WHU - Hi - HanChuan
 ```bash
 
-python main_pretrain.py --dataset='Indian' --pretrain_mode='spatial' \
+python main_pretrain.py --dataset='Pavia' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
 ```
 ### WHU - Hi - HanChuan
 ```bash
 
-python main_pretrain.py --dataset='Indian' --pretrain_mode='spatial' \
+python main_pretrain.py --dataset=''WHU-Hi-HC' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
 ```
 
 ### University of Pavia
 ```bash
 
-python main_pretrain.py --dataset='Indian' --pretrain_mode='spatial' \
+python main_pretrain.py --dataset=''WHU-Hi-LK' --pretrain_mode='spatial' \
 --output_dir='<path_to_save_spatial_model>'
 ```
 
