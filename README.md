@@ -27,7 +27,7 @@ conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cud
 - Install other requirements:
 ```bash
 pip install -r requirements.txt
-
+```
 ### 📦 Download datasets and pretrained checkpoints
 
 - Download **Indian Pines**, **Pavia University**, and **Houston** datasets using the link provided in [SpectralFormer](https://github.com/danfenghong/SpectralFormer).  
