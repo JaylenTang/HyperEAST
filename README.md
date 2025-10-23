@@ -30,8 +30,8 @@ pip install -r requirements.txt
 ```
 ### 📦 Download datasets and pretrained checkpoints
 
-- Download **Indian Pines**, **Pavia University**, and **Houston** datasets using the link provided in [SpectralFormer](https://github.com/danfenghong/SpectralFormer).  
-- Download **Wuhan (WHU-HI)** datasets with `.mat` file format from [here](https://github.com/danfenghong/IEEE_TGRS_SpectralFormer).  
+- Download **Indian Pines**, **Pavia University**, and **Houston** datasets using the link provided in [SpectralFormer]([https://github.com/danfenghong/SpectralFormer](https://github.com/danfenghong/IEEE_TGRS_SpectralFormer)).  
+- Download **Wuhan (WHU-HI)** datasets with `.mat` file format from [here](https://rsidea.whu.edu.cn/resource_WHUHi_sharing.htm).  
   *(Download the split with 100 samples per class)*  
 - Download our **pretrained** and **finetuned** checkpoints from the links provided in the following table.
 
