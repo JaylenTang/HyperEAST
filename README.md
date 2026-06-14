@@ -1,6 +1,5 @@
 # HyperEAST: An Enhanced Attention-Based Spectral–Spatial Transformer with Self-Supervised Pretraining for Hyperspectral Image Classification
-The official repository of the paper [**HyperEAST: An Enhanced Attention-Based Spectral–Spatial Transformer with Self-Supervised Pretraining for Hyperspectral Image Classification**](https://ieeexplore.ieee.org/document/11129658),  
-published at *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)*, 2025, Art. no. 11129658, doi: [10.1109/JSTARS.2025.11129658](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11129658).
+[**HyperEAST: An Enhanced Attention-Based Spectral–Spatial Transformer with Self-Supervised Pretraining for Hyperspectral Image Classification**](https://ieeexplore.ieee.org/document/11129658), published at *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)*, 2025, Art. no. 11129658, doi: [10.1109/JSTARS.2025.11129658](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11129658).
 
 <img width="5139" height="2905" alt="HyperEAST" src="https://github.com/user-attachments/assets/3e584b28-6237-40bf-822f-1780fccc3e22" />
 <img width="9770" height="2870" alt="LFAM" src="https://github.com/user-attachments/assets/bee171e5-1cf1-4208-9dd5-4330f9c828d0" />
@@ -185,6 +184,4 @@ This repository builds upon the following works:
 - [**Masked Auto-Encoding Spectral–Spatial Transformer for Hyperspectral Image Classification**](https://ieeexplore.ieee.org/document/9931741) [[Code]](https://github.com/ibanezfd/MAEST)
 - [**Hyperspectral Image Classification Using Group-Aware Hierarchical Transformer**](https://ieeexplore.ieee.org/document/9895238)[[Code]](https://github.com/MeiShaohui/Group-Aware-Hierarchical-Transformer)
 - [**DeepHyperX [Code]**](https://github.com/xiachangxue/DeepHyperX)
-
-
 
