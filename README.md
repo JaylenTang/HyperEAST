@@ -169,7 +169,7 @@ python main_pretrain.py --dataset='Pavia' --pretrain_mode='spatial' \
   year={2025},
   volume={18},
   number={},
-  pages={1-15},
+  pages={22241-22255},
   doi={10.1109/JSTARS.2025.3599855}}
 ```
 ##  Acknowledgement
